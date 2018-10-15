@@ -8,14 +8,14 @@ from datetime import datetime
 subprocess.call('clear', shell=True)
 
 # Ask for input
-remoteServer    = raw_input("Enter a remote host to scan: ")
+remoteServer = raw_input("Enter a remote host to scan: ")
 m = int(1)
 n = int(1025)
-option    = raw_input("Default port options: y/n ")
+option = raw_input("Default port options: y/n ")
 
 if (option == "n"):
-    n    = int(raw_input("Enter a starting port (can't be smaller than 1): "))
-    m    = int(raw_input("Enter ending port (cant be greater than 65535): "))
+    n = int(raw_input("Enter a starting port (can't be smaller than 1): "))
+    m = int(raw_input("Enter ending port (cant be greater than 65535): "))
 
 remoteServerIP  = socket.gethostbyname(remoteServer)
 
@@ -30,7 +30,7 @@ try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         result = sock.connect_ex((remoteServerIP, port))
         if result == 0:
-            print "Port {}: 	 Open".format(port)
+            print "Port {}: 	Open".format(port)
         sock.close()
 
 except KeyboardInterrupt:
@@ -47,6 +47,6 @@ except socket.error:
 
 t2 = datetime.now()
 
-total =  t2 - t1
+total = t2 - t1
 
 print 'Scanning Completed in: ', total
