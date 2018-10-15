@@ -16,9 +16,7 @@ The Address Resolution Protocol (ARP) uses a simple message format containing on
 
 Input the remote host to scan and opt to scan for specific ports.
 
-To exectute:
+To execute:
 ```
 python arp-scanner.py
 ```
-# network-tools
-A personal collection of simple and effective network tools
