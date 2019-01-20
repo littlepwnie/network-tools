@@ -1,4 +1,4 @@
-# network-tools
+# Network Tools
 A personal collection of simple and effective network tools
 
 ## Port Scanner
