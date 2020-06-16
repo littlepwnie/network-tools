@@ -20,7 +20,7 @@ python arp-scanner.py
 ```
 
 ## Ping scanner
-A simple script that discovers active hosts. It displays every pingable `IPv4` Devices connected on a /24 network.
+A simple python3 script that discovers active hosts. It displays every pingable `IPv4` Devices connected on a /24 network.
 
 Change in the script the subnet and optionally the range if you don't want the whole /24.
 
